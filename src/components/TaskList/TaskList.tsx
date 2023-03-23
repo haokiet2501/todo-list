@@ -65,8 +65,8 @@ export default function TaskList(props: TaskListProps) {
 
 TaskList.propTypes = {
   doneTaskList: PropTypes.bool,
-  todos: PropTypes.arrayOf(TodoTypes),
-  handleDoneTodo: PropTypes.func,
-  handleClickEdit: PropTypes.func,
-  handleDeleteTodo: PropTypes.func
+  todos: PropTypes.arrayOf(TodoTypes).isRequired,
+  handleDoneTodo: PropTypes.func.isRequired,
+  handleClickEdit: PropTypes.func.isRequired,
+  handleDeleteTodo: PropTypes.func.isRequired
 }
